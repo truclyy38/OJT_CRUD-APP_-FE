@@ -1,38 +1,342 @@
-.App {
+/**
+ * app.css
+
+ *
+ * Version 1.0
+ *
+ * Date: 06-10-2021
+ *
+ * Copyright
+ *
+ * Modification Logs:
+ * DATE                 AUTHOR          DESCRIPTION
+ * -----------------------------------------------------------------------
+ * 06-10-2021	         LyNTT9           Create
+ */
+body {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select  : none !important;
+  -khtml-user-select   : none !important;
+  -moz-user-select     : none !important;
+  -ms-user-select      : none !important;
+  user-select          : none !important;
+
+}
+
+.color-primary{
+  background-color: #269199!important;
+  color : white!important
+}
+
+.form-contain {
+  background-color: white !important;
+  margin-top      : 40px;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  padding    : 0 24px;
+  font-size  : 18px;
+  line-height: 64px;
+  cursor     : pointer;
+  transition : color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height    : 32px;
+  margin    : 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+/* reset antd */
+.site-layout-background {
+  display: none;
+}
+
+.ant-layout-sider-children .logo {
+  display: none;
+}
+
+.ant-menu-item:active {
+  background-color: rgb(136, 136, 173) !important;
+}
+
+/* HomePage css */
+.homepage-container {
+  display        : flex;
+  width          : 100%;
+  flex-direction : row;
+  justify-content: flex-start;
+  align-items    : center;
+  margin-left    : 10%;
+}
+
+.divider-img {
+  width: 20%;
+}
+
+.ant-menu-item a {
+  color: white !important
+}
+
+/* .ant-menu-item a:active {
+  color: black !important
+} */
+
+
+/* new form*/
+.ant-form-item-required::after {
+  display     : inline-block !important;
+  margin-right: 4px !important;
+  color       : #ff4d4f !important;
+  font-size   : 14px !important;
+  font-family : SimSun, sans-serif !important;
+  line-height : 1 !important;
+  content     : '*' !important;
+}
+
+.ant-form-item-required::before {
+  content: '' !important;
+}
+
+.title {
+  /* margin-left: 10% !important; */
+  color      : #269199 !important;
+  font-weight: bold !important;
+  font-size  : 30px;
+}
+
+.ant-table-cell a {
+  color: black !important;
+}
+
+.container {
+  background-color: white !important;
+}
+
+/* background: */
+.green-Seaweed,
+.ant-layout-sider,
+.ant-layout-sider-children,
+.ant-layout-header,
+.ant-menu-dark {
+  background-color: #008299 !important;
+}
+
+th.ant-table-cell {
+  /* background-color: #ace1eb !important; */
+  font-weight: bolder !important;
+}
+
+td.ant-table-cell button {
+  background-color: #ace1eb !important;
+  border          : none !important;
+  height          : 40px;
+}
+
+.ant-btn {
+  /* background-color: #323233 !important; */
+  font-weight: bolder;
+}
+
+.ant-btn-dangerous {
+  background-color: red !important;
+  color           : white !important
+}
+
+
+/* login  */
+.ant-card{
+  margin-top: 70px !important;
+}
+
+.ant-card-body{
+  border: 2px solid #269199;
+  border-radius : 6px;
+}
+
+.login-form-button {
+  display       : flex;
+  flex-direction: row;
+  margin-left   : 200px;
+  margin-top: 100px !important;
+}
+
+.passwordField {
+  margin-bottom : 2px!important
+}
+
+.rememberMe {
+  margin-left : 5px
+}
+
+/* sider */
+.ant-layout-sider-children{
+background-color: beige;
+}
+
+/*  */
+label {
+  cursor: pointer;
+  /* Style as you please, it will become the visible UI component. */
+}
+
+#upload-photo {
+  opacity : 0;
+  position: absolute;
+  z-index : -1;
+}
+
+/* css table */
+.course-button {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-start;
+  margin-bottom: 10px
+}
+
+.title {
+  padding: 30px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.common-button {
+  background-color: #008299 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* student-table */
+.contain-f {
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items    : center;
+  width          : 100%;
+  /*  */
+  ;
 }
 
-.App-link {
-  color: #61dafb;
+/* form */
+.label-f {
+  text-align : left;
+  font-size  : 15px;
+  font-weight: bolder !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-title {
+  margin-bottom: 20px;
 }
+
+.button-form {
+  display       : flex;
+  flex-direction: row;
+  margin-top: 10px !important;
+}
+
+.button-form button {
+  color: white !important
+}
+
+.bt-submit {
+  background-color: #1890ff !important;
+}
+
+.bt-reset {
+  background-color: rgb(49, 206, 127) !important;
+  align-items     : center;
+  text-align      : center;
+}
+
+.bt-cancel {
+  background-color: red !important;
+  border-color: red !important;
+}
+
+.bt-cancel:hover {
+  background-color: rgb(255, 71, 71) !important;
+  border-color: rgb(255, 71, 71) !important;
+}
+
+
+/* edit form */
+.edit-f .ant-form-item-no-colon{
+  text-align : left;
+  font-size  : 15px;
+  font-weight: bolder !important;
+  /* background-color: grey !important; */
+}
+
+.edit-f-contain{
+  background-color: honeydew !important;
+  padding: 10px 100px;
+
+}
+
+.input-f {
+  height: 40px;
+}
+
+.font-gender{
+  font-weight: 100 !important;
+}
+
+.input-f label{
+  font-weight: 700;
+  font-size: 17px !important;
+}
+
+.input-position input{
+  position: absolute;
+  right: 50px;
+  width: 300px;
+  bottom: 3px;
+}
+
+/* .input-password {
+ display: flex;
+ flex-direction: row;
+} */
+.but{
+  margin:20px;
+  width: 80px;
+  height: 30px;
+}
+
+
+/* class component */
+.title-column:hover{
+ color: rgb(21, 46, 189) !important;
+ /* background-color: grey; */
+}
+
+/*detail student*/
+.text-left-form {
+  text-align: left!important;
+  font-size: 17px;
+}
+.bold {
+  font-weight: bold!important;
+}
+
+.non-cursor{
+  pointer-events: none; 
+}
+
+/* student component */
+.bt-item{
+  background-color: red !important;
+}
+
+
