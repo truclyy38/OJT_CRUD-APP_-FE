@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router";
 import { Link } from "react-router-dom";
-import { Layout, DatePicker, Input, Form, Button, Radio, Popconfirm, message, Select, Modal, Menu, Upload, Space } from "antd";
+import { Layout, Input, Form, Button, Radio, Popconfirm, message, Select, Modal, Menu, Upload, Space } from "antd";
 import { ExclamationCircleOutlined, RightOutlined, UploadOutlined, UserOutlined } from "@ant-design/icons";
 import moment from 'moment';
 import { IMajor } from "../../@types/IMajor";
@@ -308,7 +308,7 @@ export const EditDetailStudent = (props: any) => {
               label="Birthday"
               colon={false}
               rules={[validRule.birthday]} >
-              <DatePicker defaultValue={moment('2021/05/24', dateFormat)} format={dateFormat} />
+              {/* <DatePicker defaultValue={moment('2021/05/24', dateFormat)} format={dateFormat} /> */}
             </Form.Item>
 
             <Form.Item

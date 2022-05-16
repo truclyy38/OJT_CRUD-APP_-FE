@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Layout, Form, Input, Button, Radio, DatePicker, Select, message, Modal, Menu, Space, Upload } from 'antd';
+import { Layout, Form, Input, Button, Radio, Select, message, Modal, Menu, Space, Upload } from 'antd';
 import { ExclamationCircleOutlined, RightOutlined, UploadOutlined, UserOutlined } from '@ant-design/icons';
 import { useHistory } from 'react-router';
 import { IMajor } from '../../@types/IMajor';
@@ -293,14 +293,14 @@ export const NewTeacher = () => {
               </Radio.Group>
             </Form.Item>
 
-            <Form.Item
+            {/* <Form.Item
               name="birthday"
               label="Birthday"
               colon={false}
               rules={[validRule.birthday]} >
                 <DatePicker format={dateFormat} disabledDate={(date) => !date || date.isSameOrAfter(new Date())
                 } />
-              </Form.Item>
+              </Form.Item> */}
 
               <Form.Item
               name="image"
