@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "http://random-chat-api-server.herokuapp.com/";
 
 /**
  * auth.service
@@ -24,7 +24,7 @@ const API_URL = "http://localhost:8080/api/auth/";
     */
 export const login = (username: any, password: any) => {
   return axios
-    .post(API_URL + "signin", {
+    .post(API_URL + "users/sign_in", {
       username,
       password,
     })
