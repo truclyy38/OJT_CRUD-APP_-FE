@@ -71,7 +71,7 @@ function useHttp(requestFunction: any, startWithPending = false) {
                 setTimeout(() => {
                     dispatch({ type: ActionType.SUCCESS, responseData })
                 }, 500);
-            } catch (error) {                
+            } catch (error:any) {                
                 setTimeout(() => {
                     dispatch({
                         type: ActionType.ERROR,
